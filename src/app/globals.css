@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f9;
+  --foreground: #2b3333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-specie: #9980f2;
+  --color-text: #555b6e;
+  --color-status: #3f04bf;
+  --color-green: #43d978;
+  --color-red: #d92525;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #d7d7d9;
+    --foreground: #101010;
+  }
+}
+
+@layer utilities {
+  @media (min-width: 1650px) {
+    .cards-column {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: 1650px) {
+    .cards-column {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 1280px) {
+    .cards-column {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1335px) {
+    .grid-column-1335 {
+      grid-template-columns: auto 2fr auto;
+    }
+  }
+
+  @media (max-width: 1335px) {
+    .grid-column-1335 {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto auto auto;
+    }
+    .contenedor-1 {
+      grid-row: 3;
+    }
+
+    .contenedor-3 {
+      grid-row: 2;
+    }
+
+    .contenedor-2 {
+      grid-row: 1;
+    }
+    .sticky-out {
+      position: inherit;
+    }
+    .max-width-1335 {
+      max-width: 340px;
+    }
+  }
+  @media (max-width: 780px) {
+    .cards-column {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .width-card {
+      width: 380px;
+    }
+  }
+  @media (min-width: 480px) {
+    .width-card {
+      width: 400px;
+    }
+  }
+  .bg-opacity-50 {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .background-blur {
+    backdrop-filter: blur(10px);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
