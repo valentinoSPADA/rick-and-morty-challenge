@@ -41,7 +41,7 @@ This challenge aims to evaluate best development practices, creativity, and effi
 ## 📦 Installation and Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/rick-and-morty-episode-finder.git
+git clone https://github.com/valentinoSPADA/rick-and-morty-challenge.git
 cd rick-and-morty-episode-finder
 
 # Install dependencies
@@ -66,7 +66,7 @@ npm run test
 
 ```bash
 # Deploy to Vercel
-vercel
+[vercel](https://rick-and-morty-episode-finderl.vercel.app/)
 ```
 
 ---
