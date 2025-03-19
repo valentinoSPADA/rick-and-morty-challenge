@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: false,
+  output: "standalone",
+  images: {
+    domains: ["rickandmortyapi.com"],
+  },
+  experimental: {
+    forceSwcTransforms: true,
+  },
 };
 
 export default nextConfig;
