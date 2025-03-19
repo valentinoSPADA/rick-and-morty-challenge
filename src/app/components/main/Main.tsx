@@ -40,8 +40,8 @@ export default function Main() {
             Rick and Morty Challenge
           </h1>
           <p className="text-lg text-center sm:text-left --text">
-            Select two characters from Rick and Morty and watch their episodes
-            in common
+            Select two characters from Rick and Morty and explore their shared
+            episodes
           </p>
           <CharacterButtons />
         </div>
