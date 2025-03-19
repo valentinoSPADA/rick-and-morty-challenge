@@ -54,7 +54,7 @@ The application will be available at `http://localhost:3000`
 
 ---
 
-## 🧪 Testing (Optional)
+## 🧪 Testing
 ```bash
 # Run tests
 npm run test
