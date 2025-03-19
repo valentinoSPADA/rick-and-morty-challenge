@@ -63,11 +63,7 @@ npm run test
 ---
 
 ## 🌍 Deployment 
-
-```bash
-# Deploy to Vercel
 [vercel](https://rick-and-morty-episode-finderl.vercel.app/)
-```
 
 ---
 
